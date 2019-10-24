@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<name>UF2_act2</name>
+=======
+	<name>M9_UF2Git</name>
+>>>>>>> branch 'master' of https://github.com/Aitorsg98/M9_UF2_Act2
+=======
+	<name>M9_UF2Git</name>
+>>>>>>> branch 'master' of https://github.com/Aitorsg98/M9_UF2_Act2
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
