@@ -1,5 +1,3 @@
-package uf2;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.concurrent.ExecutionException;
@@ -9,8 +7,6 @@ import java.util.concurrent.TimeUnit;
   
 public class activitat2 {
 	
-	//prova
-
     public static void main(final String... args) throws InterruptedException, ExecutionException {
         //mostrem hora actual abans d’execució
     Calendar calendario = new GregorianCalendar();
@@ -23,7 +19,7 @@ public class activitat2 {
     // Programa Fil, s’inicia als 5 segons i després es va executant cada 6 segons
     schExService.scheduleWithFixedDelay(ob, 5, 6, TimeUnit.SECONDS);
     // Espera per acabar 10 segons
-    schExService.awaitTermination(10, TimeUnit.SECONDS);
+    schExService.awaitTermination(30, TimeUnit.SECONDS);
     // shutdown .
     schExService.shutdownNow();
     System.out.println("Completat");
@@ -32,6 +28,7 @@ public class activitat2 {
     // Fil Runnable
     class ExecutaFil implements Runnable {
         @Override
+        // Mostrara l'hora d'execució i el estat de la tasca de cada fil.
         public void run() {
             Calendar calendario = new GregorianCalendar();
             System.out.println("Hora execució tasca: "+
