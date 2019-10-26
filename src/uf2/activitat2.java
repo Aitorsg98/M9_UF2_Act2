@@ -20,8 +20,8 @@ public class activitat2 {
     final ScheduledExecutorService schExService = Executors.newScheduledThreadPool(4);
     // Crea objecte Runnable.
     final Runnable ob = new activitat2().new ExecutaFil();
-    // Programa Fil, s’inicia als 2 segons i després es va executant cada 3 segons
-    schExService.scheduleWithFixedDelay(ob, 2, 3, TimeUnit.SECONDS);
+    // Programa Fil, s’inicia als 5 segons i després es va executant cada 6 segons
+    schExService.scheduleWithFixedDelay(ob, 5, 6, TimeUnit.SECONDS);
     // Espera per acabar 10 segons
     schExService.awaitTermination(10, TimeUnit.SECONDS);
     // shutdown .
