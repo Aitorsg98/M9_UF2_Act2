@@ -1,3 +1,5 @@
+package uf2;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.concurrent.ExecutionException;
@@ -18,7 +20,7 @@ public class activitat2 {
     final Runnable ob = new activitat2().new ExecutaFil();
     // Programa Fil, s’inicia als 5 segons i després es va executant cada 6 segons
     schExService.scheduleWithFixedDelay(ob, 5, 6, TimeUnit.SECONDS);
-    // Espera per acabar 10 segons
+    // Espera per acabar 30 segons
     schExService.awaitTermination(30, TimeUnit.SECONDS);
     // shutdown .
     schExService.shutdownNow();
